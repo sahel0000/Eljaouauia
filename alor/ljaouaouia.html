@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الجووية القسنطينية</title>
+    <link href="C:\Users\user\Desktop\project\alor\DOUSIER\src\input.css" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\user\Desktop\project\alor\DOUSIER\src\output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-200 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-yellow-300 shadow-md p-4 flex justify-between items-center">
+        <h1 id="title" class="text-xl font-bold text-brown-800">الجووية القسنطينية</h1>
+        <div class="relative">
+            <button id="languageButton" onclick="toggleDropdown()" class="text-sm px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 focus:outline-none">
+                اللغة
+            </button>
+            <div id="language-dropdown" class="absolute right-0 mt-2 w-40 bg-white border rounded shadow-lg dropdown-menu">
+                <a href="#" onclick="changeLanguage('ar')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+                <a href="#" onclick="changeLanguage('fr')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a>
+                <a href="#" onclick="changeLanguage('en')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-4">
+        <!-- Introduction -->
+        <section class="text-center my-6">
+            <h2 id="subtitle" class="text-2xl font-bold text-brown-700 mb-4">تذوق أصالة الجووية</h2>
+            <p id="description" class="text-gray-600">نقدم لك ألذ الحلويات التقليدية من قلب قسنطينة.</p>
+        </section>
+
+        <!-- Images Carousel -->
+        <section class="my-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <img src="c:\Users\user\Desktop\project\alor\DOUSIER\img\1732970449140.jpg" alt="جووية 1" class="rounded-lg shadow-lg object-cover h-64 w-full">
+                <img src="C:\Users\user\Desktop\project\alor\DOUSIER\img\1732970454195.jpg" alt="جووية 2" class="rounded-lg shadow-lg object-cover h-64 w-full">
+                <img src="C:\Users\user\Desktop\project\alor\DOUSIER\img\1732970442300.jpg" alt="جووية 3" class="rounded-lg shadow-lg object-cover h-64 w-full">
+            </div>
+        </section>
+        <div class="div">
+            <p class="text-center" id="a">الجووية هي حلوى جزائرية تقليدية<br> تتميز بمذاقها الرائع الذي يجمع بين الحلاوة والنكهة الغنية من المكسرات والعسل<br> يتم تحضيرها بعناية باستخدام أفضل المكونات لتقديم تجربة لذيذة
+                </p>
+        </div>
+
+        <!-- Videos Section -->
+        <section class="my-6">
+            <h3 class="text-xl font-semibold text-brown-700 mb-4">شاهد الفيديوهات</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <video controls class="rounded-lg shadow-lg w-full h-64 object-cover">
+                    <source src="C:\Users\user\Desktop\project\DOUSIER\img\VID-20241130-WA0003.mp4" type="video/mp4">
+                </video>
+                <video controls class="rounded-lg shadow-lg w-full h-64 object-cover">
+                    <source src="C:\Users\user\Desktop\project\DOUSIER\img\VID-20241130-WA0002.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="bg-brown-50 p-4 rounded-lg shadow mt-8 text-center">
+            <h3 id="contact-title" class="text-lg font-bold text-brown-800 mb-2">للطلب أو الاستفسار</h3>
+            <p id="contact-text">اتصل على الرقم: <span id="contact-text" class="font-semibold">0770490099</span></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 text-center mt-6">
+        <p>&copy; 2024 <span id="footer-text">الجووية القسنطينية</span>.</p>
+    </footer>
+
+    <script src="C:\Users\user\Desktop\project\alor\DOUSIER\src\input.js"></script>
+</body>
+</html>
